@@ -2,6 +2,7 @@ body {
     font-family: 'Syne', sans-serif;
     color: #737673;
     font-weight: 400;
+    background-color: snow;
 }
 .text-center {
     text-align: center;
@@ -12,4 +13,9 @@ body {
 
 .h1-margin {
     margin-top: 50px;
+}
+a:any-link {
+    color: #737673;
+    background-color: transparent;
+    text-decoration: none;
 }
