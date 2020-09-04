@@ -33,14 +33,22 @@
       <br>
       <p class="paragraph-text">To see how things are <strong>styled</strong> (made to look just how they do) on a webpage it can be helpful to consider that everything on a web page consists of <strong>boxes</strong>. Each element on a web page has it’s own rectangle (or sometimes square) that surrounds it. Any elements that are inside another element are referred to as a <strong>child</strong> element, while elements that encompass other elements are referred to as <strong>parent</strong> elements.
         We cannot necessarily see these boxes but if we were to add a <code>border</code> to each element these rectangles would become visible. Instead we can visualise these boxes in our head (or physically draw them) to help understand the positioning of elements.
-        The <code>position</code> property is used to position elements using CSS (Cascading Style Script) code however the position property has six different values that can be used</p>
-      <h2>Relative, Fixed and Absolute Positioning</h2>
-      <h3><em>What do they do and how do they differ?</em></h3>
-    
-       <p>
-      Te Houtaewa was the fastest runner of his day and played many pranks on his peoples enemies. One morning his mother wanted kumara for the hangi (earth oven) and asked Te Houtaewa to go to the gardens at Te Kao, a short distance away. He agreed to fetch the kumara and told his mother to prepare the hangi.
-     </p>
-     <p>
+        The <code>position</code> property is used to position elements using CSS (Cascading Style Script) code however the position property has six different values that can be used. As a rule the <strong>default</strong> position value for new elements is <strong>static</strong> (which just means the elements will flow into the page as normal). 
+      </p>
+      <br>
+        <h2 class="text-center">Relative, Fixed and Absolute Positioning</h2>
+      <h4 class="text-center"><em>What do they do and how do they differ?</em></h4>
+      <h3><strong>Relative Positioning:</strong></h3> <h4><em>I want to position an element relative to where it would normally be</em></h4>
+      <br> 
+      <p class="paragraph-text">
+        Simply setting the <code>position: relative</code> value to an element will do nothing. You must supply a positioning element (top, left, bottom or right). The element will then position <strong>relative</strong> to where it would <strong>normally be</strong>.
+        e.g. <code>top:10px</code> will position the element 10px (pixels) down from where it would normally be. Think of it as adding a 10 pixel gap in place of where the element would be, pushing the element down.<br>
+        <strong>Position Relative</strong> also introduces the ability to use <code>z-index</code> (<strong>stack order</strong>) on that element. The easy way to visualise stack order is to think of sheets of paper. They may not all be the same size or shape, but when you stack them on top of each other some parts may be covered by other pieces of paper, while some pieces of paper might be completely covered and not visible at all.
+        The top of the pile (the element with the <strong>highest</strong> z-index) will always be completely visible. It’s worth knowing that z-index <em>only</em> works on <strong>positioned elements</strong> (absolute, relative, fixed, sticky), so this element will now appear on top of any static elements.
+        <br>Technical Application:
+      </p>
+     <h3><strong>Absolute Positioning:</strong></h3> <h4><em>I absolutely MUST position an element RIGHT HERE.</em></h4>
+      <p>
       Instead of going to the nearby gardens, Te Houtaewa set off for Ahipara as he wanted to annoy some Te Rarawa people who lived there. Carrying two large baskets for the kumara, he ran like the wind, completing the journey over the hard sands of Te Oneroa a Tohe (Ninety Mile Beach) in the few hours it takes a good hangi to heat up properly. On reaching Ahipara, he went straight to the people's kumara pataka (storehouse for the sweet potatoes) situated at the foot of the hill Whangatauatia.
      </p>
      <p>
