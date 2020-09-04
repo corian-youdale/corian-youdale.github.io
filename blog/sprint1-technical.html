@@ -45,22 +45,36 @@
         e.g. <code>top:10px</code> will position the element 10px (pixels) down from where it would normally be. Think of it as adding a 10 pixel gap in place of where the element would be, pushing the element down.<br>
         <strong>Position Relative</strong> also introduces the ability to use <code>z-index</code> (<strong>stack order</strong>) on that element. The easy way to visualise stack order is to think of sheets of paper. They may not all be the same size or shape, but when you stack them on top of each other some parts may be covered by other pieces of paper, while some pieces of paper might be completely covered and not visible at all.
         The top of the pile (the element with the <strong>highest</strong> z-index) will always be completely visible. It’s worth knowing that z-index <em>only</em> works on <strong>positioned elements</strong> (absolute, relative, fixed, sticky), so this element will now appear on top of any static elements.
-        <br>Technical Application:
+        <br><em>Technical Application: </em>
       </p>
       <br>
-      <h3><strong>Fixed Positioning:</strong></h3> <h4><em>I want this element to stay in this EXACT position on the screen/browser window/viewport, even when the user scrolls.</em></h4>
+      <h3><strong>Fixed Positioning:</strong></h3>
+      <h4><em>I want this element to stay in this EXACT position on the screen/browser window/viewport, even when the user scrolls.</em></h4>
       <br>
-      <p class="paragraph-text">
+      <p class="paragraph-text"> You’ve probably seen examples of this on webpages particularly with navigation bars that seem to ‘float’ at the top of the page while you scroll.
+        When you scroll down the webpage the element remains in a <strong>fixed</strong> position despite you scrolling (everything that is not fixed will move with the scrolling).
+        Fixed positioning can be useful when used correctly but you can run into problems with fixed items overlapping/covering other content and making it <strong>inaccessible</strong>.
       </p>
       <br>
-     <h3><strong>Absolute Positioning:</strong></h3> <h4><em>I absolutely MUST position an element RIGHT HERE.</em></h4>
+     <h3><strong>Absolute Positioning:</strong></h3>
+     <h4><em>I absolutely MUST position an element RIGHT HERE.</em></h4>
      <br>
-      <p class="paragraph-text"><strong>Absolute</strong> positioning also uses the position elements <strong>top, right, bottom</strong> and <strong>left</strong> to set the location of an element.
+      <p class="paragraph-text">
+        <strong>Absolute</strong> positioning also uses the position elements <strong>top, right, bottom</strong> and <strong>left</strong> to set the location of an element.
         These values will be relative to the next <strong>parent element</strong> with <strong>relative</strong> (or <strong>absolute</strong>) positioning. That means if you are positioning an element inside a <code>div</code> then that element will be positioned relative to the <code>div</code> (it’s <strong>parent</strong>).
-          (i.e. the top left corner of the paragraph).
-          If there is no such parent element it will be placed relative to the page itself i.e. The top left corner of the webpage (That's because <strong>everything</strong> is a child element to the <code>html</code> - the web page itself).
+        (i.e. the top left corner of the paragraph).
+        If there is no such parent element it will be placed relative to the page itself i.e. The top left corner of the webpage (That's because <strong>everything</strong> is a child element to the <code>html</code> - the web page itself).
       </p>
       <br>
+      <h3><strong>Sticky Positioning (extra for experts!):</strong></h3>
+      <h4><em>I want this element to become fixed as I scroll past it (if there is room) until it is no longer relevant, then I want it to disappear.</em></h4>
+      <br>
+        <p class="paragraph-text">
+          More advanced than <strong>fixed</strong> positioning, <strong>sticky</strong> positioning will allow you to access the benefits of fixed positioning but (hopefully) overcome some of the problems that fixed positioning can have.
+          When you step on a piece of gum it will stick to your shoe and follow you, but with sticky positioning we can control when the gum becomes ‘unsticky’ and falls off.
+        <br>
+        <em>Note: IE/Edge 15 and earlier versions do not support <strong>sticky</strong> positioning.</em>
+        </p>
 
     
     <!-- this is a comment. -->
