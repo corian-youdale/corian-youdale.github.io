@@ -38,7 +38,7 @@
       <br>
         <h2 class="text-center">Relative, Fixed and Absolute Positioning</h2>
       <h4 class="text-center"><em>What do they do and how do they differ?</em></h4>
-      <h3><strong>Relative Positioning:</strong></h3> <h4><em>I want to position an element relative to where it would normally be</em></h4>
+      <h3><strong>Relative Positioning:</strong></h3> <h4><em>I want to position an element RELATIVE to where it would normally be</em></h4>
       <br> 
       <p class="paragraph-text">
         Simply setting the <code>position: relative</code> value to an element will do nothing. You must supply a positioning element (top, left, bottom or right). The element will then position <strong>relative</strong> to where it would <strong>normally be</strong>.
@@ -47,13 +47,21 @@
         The top of the pile (the element with the <strong>highest</strong> z-index) will always be completely visible. It’s worth knowing that z-index <em>only</em> works on <strong>positioned elements</strong> (absolute, relative, fixed, sticky), so this element will now appear on top of any static elements.
         <br>Technical Application:
       </p>
+      <br>
+      <h3><strong>Fixed Positioning:</strong></h3> <h4><em>I want this element to stay in this EXACT position on the screen/browser window/viewport, even when the user scrolls.</em></h4>
+      <br>
+      <p class="paragraph-text">
+      </p>
+      <br>
      <h3><strong>Absolute Positioning:</strong></h3> <h4><em>I absolutely MUST position an element RIGHT HERE.</em></h4>
-      <p>
-      Instead of going to the nearby gardens, Te Houtaewa set off for Ahipara as he wanted to annoy some Te Rarawa people who lived there. Carrying two large baskets for the kumara, he ran like the wind, completing the journey over the hard sands of Te Oneroa a Tohe (Ninety Mile Beach) in the few hours it takes a good hangi to heat up properly. On reaching Ahipara, he went straight to the people's kumara pataka (storehouse for the sweet potatoes) situated at the foot of the hill Whangatauatia.
-     </p>
-     <p>
-      While Te Houtaewa was filling his baskets with kumara he was spotted stealing the kai (food). He was immediately recognised.
-     </p>
+     <br>
+      <p class="paragraph-text"><strong>Absolute</strong> positioning also uses the position elements <strong>top, right, bottom</strong> and <strong>left</strong> to set the location of an element.
+        These values will be relative to the next <strong>parent element</strong> with <strong>relative</strong> (or <strong>absolute</strong>) positioning. That means if you are positioning an element inside a <code>div</code> then that element will be positioned relative to the <code>div</code> (it’s <strong>parent</strong>).
+          (i.e. the top left corner of the paragraph).
+          If there is no such parent element it will be placed relative to the page itself i.e. The top left corner of the webpage (That's because <strong>everything</strong> is a child element to the <code>html</code> - the web page itself).
+      </p>
+      <br>
+
     
     <!-- this is a comment. -->
     <br> <br>
