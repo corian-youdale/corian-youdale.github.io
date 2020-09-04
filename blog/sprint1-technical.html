@@ -1,27 +1,61 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
-    <title>Stories and Legends (PAGE title) </title>
+    <title>TECH#1</title>
     <meta charset="UTF-8">
-    <link href="styles/main.css" rel="stylesheet" type="text/css" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="bootstrap.css">
+    <link rel=”stylesheet” src=”//normalize-css.googlecode.com/svn/trunk/normalize.css”>
+    <link rel="stylesheet" href="main.css" type="text/css">
+    <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500&display=swap" rel="stylesheet">
   </head>
   
   <body>
-    <h1>The Story of Te Houtaewa (PAGE heading)</h1>
-    <h2>E kore e mau i a koe, he wae kai pakiaka. <em>A foot accustomed to running over roots makes the speediest runner.</em> (Optional SUB title) </h2>
-    <h3>10 November 2010</h3>
+    <div class="container">
+      <div class="row">
+        <div class="wrap-logo-name">
+          <div class="col-md-6 split-share">
+           <img class="img-responsive logo-photo" src="1bear.jpg" alt="cool bear logo">
+          </div>
+          <div class="col-md-6 text-right split-share">
+            <h1 class="title-name">Corian Youdale</h1>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12">
+          <hr style="height: 3px;border: none;color:#666;background-color: #666;">
+        </div>
+      </div>
+      <h1 class="text-center text-thick">Technical Blog #1: Positioning of Elements</h1>
+      <h5 class="text-center">04 September 2020</h5>
+      <br>
+      <p class="paragraph-text">To see how things are <strong>styled</strong> (made to look just how they do) on a webpage it can be helpful to consider that everything on a web page consists of <strong>boxes</strong>. Each element on a web page has it’s own rectangle (or sometimes square) that surrounds it. Any elements that are inside another element are referred to as a <strong>child</strong> element, while elements that encompass other elements are referred to as <strong>parent</strong> elements.
+        We cannot necessarily see these boxes but if we were to add a <code>border</code> to each element these rectangles would become visible. Instead we can visualise these boxes in our head (or physically draw them) to help understand the positioning of elements.
+        The <code>position</code> property is used to position elements using CSS (Cascading Style Script) code however the position property has six different values that can be used</p>
+      <h2>Relative, Fixed and Absolute Positioning</h2>
+      <h3><em>What do they do and how do they differ?</em></h3>
     
-    <p>
+       <p>
       Te Houtaewa was the fastest runner of his day and played many pranks on his peoples enemies. One morning his mother wanted kumara for the hangi (earth oven) and asked Te Houtaewa to go to the gardens at Te Kao, a short distance away. He agreed to fetch the kumara and told his mother to prepare the hangi.
-    </p>
-    <p>
+     </p>
+     <p>
       Instead of going to the nearby gardens, Te Houtaewa set off for Ahipara as he wanted to annoy some Te Rarawa people who lived there. Carrying two large baskets for the kumara, he ran like the wind, completing the journey over the hard sands of Te Oneroa a Tohe (Ninety Mile Beach) in the few hours it takes a good hangi to heat up properly. On reaching Ahipara, he went straight to the people's kumara pataka (storehouse for the sweet potatoes) situated at the foot of the hill Whangatauatia.
-    </p>
-    <p>
+     </p>
+     <p>
       While Te Houtaewa was filling his baskets with kumara he was spotted stealing the kai (food). He was immediately recognised.
-    </p>
+     </p>
     
     <!-- this is a comment. -->
-  
+    <br> <br>
+    <footer>
+      <div class="row">
+        <div class="col-md-12">
+        <a class="logo-credentials" href='https://www.freepik.com/vectors/logo' target="_blank">Logo vector created by dgim-studio - www.freepik.com</a>
+        </div>
+      </div>
+    </footer>
+    </div>
   </body>
 </html>
