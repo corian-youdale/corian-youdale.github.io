@@ -1,3 +1,11 @@
+
+
+
+
+
+
+
+
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -32,12 +40,173 @@
           <h1 class="text-center text-thick">Technical Blog #2</h1>
           <h5 class="text-center">10 September 2020</h5>
           <br>
-          <p class="paragraph-text"> Text. 
+            <h2 class="text-center">HTML & CSS</h2>
+          <h4 class="text-center"><em>What's the difference?</em></h4>
+            <p class="paragraph-text">
+              If you were to think of a webpage as a human being, then the <strong>HTML</strong> would be the skeleton.
+              It is the bones and structure of your web page, with each element of your web page (each bone in a skeleton) being assigned a name (tag) to describe what it does (e.g. <code>header</code>).
+              This allows your browser to understand what it is reading and how to render it.
+              Browsers can render HTML on their own (the skeleton isn’t invisible) but we are capable of far more dynamic and beautiful things using <strong>CSS</strong> (think of CSS as the skin of a human body) and <strong>JavaScript</strong> (think of JavaScript as the brains of a human body).
+            </p>
+            <br>
+            <h2 class="text-center">Control Flow & Loops</h2>
+          <h4 class="text-center"><em>A Simplified Explanation</em></h4>
+            <p class="paragraph-text">
+              <strong>Control Flow</strong> (sometimes called flow of control) is the order in which your code (think of your code as instructions) are executed or evaluated.
+              Most programming languages feature <strong>control flow statements</strong> which determine what section of code is run in a program at any given time.
+              One of the most common forms of a control flow statement is an <strong>if/else</strong> statement. An if/else statement is basically:
+              <br>
+              <br>
+              If *some condition* is met --> do *something*.
+              Or else (i.e. if *some condition* isn't met) --> do *something else*
+              <br>
+              <br>
+              e.g. If a dish is dirty --> wash the dish. Or else (i.e. if the dish is clean) --> put the dish away
+              <br>
+              <br>
+              Thus the if/else code decides what section of code should be run depending on whether or not *some condition* is met.
+              Without control flow, someone who is new to doing the dishes may start by putting them away, THEN rinsing them before finally washing the dishes in hot water & detergent (leaving you with soapy wet dishes that aren’t put away).
+              With <strong>control flow</strong>, we are able to assign an order for each step to be completed in:
+              the dishes will not be rinsed until they have been washed, and will not be put away until they have been rinsed.
+              <br>
+              <br>
+              A <strong>Loop</strong> is a sequence of statements which is specified once, but can be carried out multiple times in succession.
+              The <strong>body</strong> of a loop (the code inside the loop) can be executed a specific number of times, or once for each of a collection of items, or until some condition is met, or indefinitely.
+              The simplest type of loop is a <strong>while statement</strong>, which has the following syntax:
+              <br>
+              <br>
+              <img class="img-responsive tech-app-img" src="while.JPG" alt="example of while statement syntax">
+              <br>
+              The <strong>while loop</strong> loops through the block of code as long as the specified code is true.
+              So the <strong>pseudocode</strong> (simple description of the function) for our dish-washing example would be:
+              <br>
+              <br>
+              <img class="img-responsive tech-app-img" src="whilePseudo.JPG" alt="example of pseudocode for while statement">
+              <br>
+              Each time the dishes are scrubbed in hot soapy water, the loop will restart and the dishes will be assessed again to see if they meet the condition (of being dirty in this case).
+              If the condition is not met (i.e. the dishes are clean) then the loop will not execute.
+              <br>
+              A slight variation of the <strong>while loop</strong> is a <strong>do/while loop</strong>.
+              The loop will <strong>always</strong> be executed once, before checking if the condition is true, then (like a while loop) it will repeat the loop for as long as the condition is true.
+              The syntax is as follows:
+              <br>
+              <br>
+              <img class="img-responsive tech-app-img" src="doWhile.JPG" alt="example of do/while statement syntax">
+              <br>
+              So for our dish-washing example the <strong>pseudocode</strong> would be:
+              <br>
+              <br>
+              <img class="img-responsive tech-app-img" src="doWhilePseudo.JPG" alt="example of pseudocode for do/while statement">
+              <br>
+              A <strong>do/while</strong> loop might suit us better in this example, as it means dishes will always be washed at least once (before their cleanliness is assessed and they are washed again as required).
+            </p>
+            <br>
+            <h2 class="text-center">The Document Object Model (DOM)</h2>
+          <h4 class="text-center"><em>What is it and how do we interact with it?</em></h4>
+          <p class="paragraph-text">
+            The <strong>DOM</strong> is a programming interface for HTML and XML documents that represents web pages in a way that allows them to be manipulated by programs.
+            As we have mentioned before, a web page can be summarized as follows:
+          </p>
+          <ul class="paragraph-text">
+            <li>HTML defines the structure</li>
+            <li>CSS provides the appearance/styling</li>
+            <li>JavaScript deals with the interactivity (and everything else)</li>
+          </ul>
+          <p class="paragraph-text">The DOM is like the glue that holds all these things together.
+          Something that is <em>written</em> in JavaScript <em>uses</em> the DOM to access the document and its elements.
+          The DOM is not a programming language, but without it the JS language wouldn’t have any model or notion of web pages, HTML documents, XML documents, and their component parts (e.g elements).
           </p>
           <br>
-            <h2 class="text-center">Title Text</h2>
-          <h4 class="text-center"><em>What do they do and how do they differ?</em></h4>
-          <h3><strong>Another Title:</strong></h3> <h4><em>Further title</em></h4>
-    </div>    
+          <h4><strong>Accessing The DOM:</strong></h4>
+          <p class="paragraph-text">
+            Different browsers have different implementations of the DOM, which exhibit varying degrees of conformance to the actual DOM standard, but every web browser uses some document object model to make web pages accessible via JavaScript.
+            <br>
+            One of the ways we access the DOM is through <strong>DevTools</strong>.
+            DevTools also assists us with testing and debugging websites and applications.
+            On Google Chrome the DevTools can be brought up using the <em>F12</em> key (or <em>ctrl+shift+i</em>, or clicking the three dots in the top right corner and going into ‘<em>More Tools</em>’).
+            <br>
+            <br>
+            We can use DevTools to inspect specific elements on a web page (<em>ctrl+shift+C</em> or selecting the icon on the top left of DevTools).
+            Once we select an element, all the code that affects the selected element will be displayed, allowing us a behind-the-scenes look into how any specific element of any website is run.
+            As a result DevTools (and thus the DOM) are an invaluable tool for not only debugging our own code, but also for learning by looking at other people’s code and seeing how it functions.
+          </p>
+          <br>
+          <h2 class="text-center">Arrays & Objects</h2>
+          <h4 class="text-center"><em>How do they differ and how do we access their contents?</em></h4>
+          <p class="paragraph-text">
+            <strong>Objects</strong> represent a special data type that is mutable (able to be changed) and can be used to store a collection of data rather than just a single value.
+            <br>
+            <strong>Arrays</strong> are a special data type that are <em>also</em> mutable and can <em>also</em> be used to store a list of values.
+            <br>
+            <br>
+            As a result Objects and Arrays can seem interchangeable, when in fact they are not.
+            The main difference between the two is that <strong>Objects</strong> are used to represent a <em>thing</em> in your code that has characteristics (properties), while <strong>Arrays</strong> create and store <em>lists</em> of data in a single variable.
+            <br>
+            <br>If your data represents a single entity with named properties then you want an <strong>object</strong>.
+            <br>If your data represents a group of entities of the same type/shape, or if the order of the data matters, you will likely want to use an <strong>array</strong>.
+            <br><br>
+            </p>
+            <h4><strong>Objects:</strong></h4>
+            <p class="paragraph-text">
+            Object <strong>properties</strong> consist of a <strong>key</strong> and a <strong>value</strong>:
+            <br>
+            <br>
+            <img class="img-responsive tech-app-img" src="object-syntax.JPG" alt="example of object syntax">
+            <br>
+            Properties in objects can be accessed, added, changed or removed by either using <strong>dot</strong> or <strong>bracket</strong> notation.
+            To get the value of age, add a new property to our object or delete a property in our example person above we’d type:
+            </p>
+            <br>
+            <img class="img-responsive tech-app-img" src="object-examples.JPG" alt="examples of accessing, changing and deleting an object">
+            <br> <br>
+            <h4><strong>Arrays:</strong></h4>
+            <p class="paragraph-text">
+              Arrays are used whenever we want to create and store a list of multiple items in a single variable.
+              Arrays are especially useful when creating <strong>ordered collections</strong> as it allows us to access items in the collection via their numerical position in the list.
+              Just like with <strong>object properties</strong>, arrays can consist of strings, numbers, booleans, or any primitive data type (as well as other arrays or other objects).
+              It is worth knowing that Arrays use <strong>zero-indexing</strong>, so the first item in an Array is item 0, the second is item 1 and so on. So for an example we can make an array of the names of our (dream) dogs:
+            </p>
+            <br>
+            <img class="img-responsive tech-app-img" src="array.JPG" alt="example of array syntax">
+            <br><br>
+            <p class="paragraph-text">To access the second item of our array ('The Captain' in this example) we would use:</p>
+            <br>
+            <img class="img-responsive tech-app-img" src="array-access.JPG" alt="example code for accessing an array">
+            <br>
+            <p><em>Note: Technically 'Baxter' is the 0th item (remember zero-indexing), 'The Captain' is the 1st item, and 'Gravy Train' is the 2nd item, which is why dogNames[1] calls 'The Captain'</em></p>
+            <br>
+            <h2 class="text-center">Functions</h2>
+          <h4 class="text-center"><em>What are they and why are they useful?</em></h4>
+          <p class="paragraph-text">
+            <strong>Functions</strong> are blocks of code designed to perform particular tasks.
+            The code inside a function is executed (i.e. the code runs) when “something” invokes it, or calls it.
+            Functions are identified by the <em>parentheses</em> after them.
+            <br><br>
+            Functions can be extremely useful for performing a task multiple times using different inputs.
+            Some functions are built into JavaScript already (such as the methods of arrays, strings, numbers and other objects) but you can also create your own to do almost anything you can think of.
+            If we wanted to add two numbers together and assign them to a variable we COULD just write:
+            <br><br>
+            <img class="img-responsive tech-app-img" src="Sum.JPG" alt="A simple sum example">
+            <br>
+            But what if we wanted to that multiple times with different numbers each time?
+            Rather than having to duplicate our code multiple times, we could just write a simple function to do the work for us!
+            <br> <br>
+            <img class="img-responsive tech-app-img" src="function.JPG" alt="An example of a function"> 
+            <br>
+            Then, when we run the function we can input any two numbers each time and in return receive the sum of the two numbers from each instance:
+            <br><br>
+            <img class="img-responsive tech-app-img" src="function-results.JPG" alt="Example results from our sum function">
+            <br>
+            This may seem like a simple example but remember that functions can be as complicated as you require.
+            The more complicated the function and more the times you use it means less repeated code for you to type.
+            <br><br>
+            <footer>
+              <div class="row">
+                <div class="col-md-12">
+                <a class="logo-credentials" href='https://www.freepik.com/vectors/logo' target="_blank">Logo vector created by dgim-studio - www.freepik.com</a>
+                </div>
+              </div>
+            </footer>
+          </div>    
 </body>
 </html>
