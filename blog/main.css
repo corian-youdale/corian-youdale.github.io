@@ -33,10 +33,10 @@ a:any-link {
     text-decoration: none;
 }
 .logo-photo {
-    max-height: 50%;
+    max-height: 100%;
     max-width: 100px;
-    width: 200%;
-    height: 180px;
+    width: auto;
+    height: auto;
     margin-top: 50px;
     
 }
