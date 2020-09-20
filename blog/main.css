@@ -45,6 +45,8 @@ a:any-link {
 }
 .paragraph-text {
     font-size: 14pt;
+    text-align: justify;
+    text-justify: auto;
 }
 .tech-app-img {
     margin-left: 20px;
